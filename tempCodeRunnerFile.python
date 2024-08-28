@@ -1,0 +1,23 @@
+import turtle 
+import turtle_shapes
+
+def main():
+    # Prompt for shape and parameters
+    shape_name = input("Enter the shape name (square, circle, triangle, rectangle, pentagon, hexagon): ")
+    
+    if shape_name == 'rectangle':
+        # width = int(input("Enter the width: "))
+        # height = int(input("Enter the height: "))
+        turtle_shapes.draw_shape(shape_name, 100, 100)
+    elif shape_name == 'circle':
+        # radius = int(input("Enter the radius: "))
+        turtle_shapes.draw_shape(shape_name, 100)
+    else:
+        # size = int(input("Enter the size: "))
+        turtle_shapes.draw_shape(shape_name, 100)
+    
+    # Keep the window open until it is closed by the user
+    turtle.done()
+
+if __name__ == "__main__":
+    main()
